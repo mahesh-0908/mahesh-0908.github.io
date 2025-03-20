@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+    </head>
+
+
+
+
+    <body>
+         <div id="demo_id"> <input type = "number", id = "input A" placeholder=" Enter Min Number" > </input>
+            <input type = "number", id = "input B" placeholder=" Enter Max Number" > </input>
+            <button onclick="random();" > Generate Random Number</button>
+        </div>
+        
+        <script>
+            function random(){
+
+                let  min_val = parseInt(document.getElementById("input A").value)
+                let max_value = parseInt(document.getElementById("input B").value)
+                let random_value =Math.floor( Math.random() * (max_value - min_val)) + min_val;
+
+                document.getElementById("Output_div").innerHTML = random_value;
+
+            
+
+        }
+
+        /* function clear(){
+            document.getElementById("demo_id").innerHTML = "<h1> poof</h1>";
+
+         }
+           
+            setTimeout(clear, 3000);*/
+
+            setTimeout(function() {
+                    document.getElementById("demo_id").style.visibility = 'hidden';
+                }, 3000);
+
+                setTimeout(function() {
+                    document.getElementById("demo_id").style.visibility = 'visible';
+                }, 5000);
+
+        
+        </script>
+
+
+
+
+        
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+    <input type="text" id="name" placeholder="Name">
+    <input type="number" id="age" placeholder="Age">
+    <input type="date" id="dob">
+    <input type="text" id="profession" placeholder="Profession">
+    <input type="text" id="qualification" placeholder="Qualification">  <br>
+
+
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="showAllStudents()">Show All Students</button>
+
+    <p id="demo_div"></p>
+
+    <script>
+        let students = [];
+
+        function addStudent() {
+            let student = {
+                name: document.getElementById("name").value,
+                age: document.getElementById("age").value,
+                dob: document.getElementById("dob").value,
+                profession: document.getElementById("profession").value,
+                qualification: document.getElementById("qualification").value,
+                introduce: function() {
+                    return "Hello, my name is " + this.name + ". I am " + this.age +
+                        " years old, born on " + this.dob + ". I am a " + this.profession +
+                        " and I enjoy " + this.qualification + ".";
+                }
+            };
+            students.push(student);
+           alert("Student added successfully");
+        }
+
+        function showAllStudents() {
+            let output = "";
+            for (let i = 0; i < students.length; i++) {
+                output += students[i].introduce() + "<br>";
+            }
+            document.getElementById("demo_div").innerHTML = output;
+        }
+    </script>
+
+</body>
+</html>

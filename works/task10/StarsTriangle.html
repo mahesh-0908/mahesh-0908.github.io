@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Star Triangle Generator</title>
+    <script type="text/javascript">
+        function generateTriangle() {
+            let num = document.getElementById("numInput").value;
+            let output = "";
+            for (var i = 1; i <= num; i++) {
+                for (var j = 0; j < i; j++) {
+                    output += "*";
+                }
+                output += "<br>";
+            }
+            document.getElementById("triangleOutput").innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <h1>Star Triangle Generator</h1>
+    <label for="numInput">Enter a number:</label>
+    <input placeholder="Enter a positive number" type="number" id="numInput" min="1" oninput="generateTriangle()">
+    
+    <div id="triangleOutput"></div>
+</body>
+</html>
