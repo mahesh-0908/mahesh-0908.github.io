@@ -47,7 +47,14 @@ body {
     width: 100%;
     
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9; /* Light background color */
+    border-top: 2px solid #e2ecd6; /* Top border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
 
 .iframe {
     width: 80%;
@@ -106,5 +113,5 @@ body {
     border: 1px solid #e2ecd6;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color: #e3dbcf;
+    background-color: #b6d4d2;
 }
