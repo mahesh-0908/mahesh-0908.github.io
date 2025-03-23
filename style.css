@@ -1,0 +1,98 @@
+/* Write your CSS Code here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_div {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+}
+
+#nav_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* Ensures equal spacing */
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+/* Remove button styling */
+.nav_item {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border: none; /* Removes border */
+    background: none; /* Removes background */
+    color: black; /* Default text color */
+}
+
+.nav_item:hover {
+    text-decoration: underline; /* Adds a hover effect */
+}
+
+.content_div {
+    width: 80%;
+    padding: 20px;
+}
+
+.iframe {
+    width: 100%;
+    height: 500px;
+    border:none;
+}body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header_div {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #007bff00;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#nav_div {
+    display: flex;  
+    justify-content: center;  
+    background: #f4f4f4;
+    padding: 10px;
+    gap: 10px; 
+}
+
+#nav_div a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(62, 51, 51);
+    background-color: #4b4f5200;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#nav_div a:hover {
+    background-color: #0056b3;
+}
+
+.content_div {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#content_frame {
+    width: 90%;
+    height: 500px;
+    border: 1px solid #ccc;
+}
